@@ -1,23 +1,57 @@
+@font-face {
+    font-family: 'Aldo the Apache';
+     src: url(fonts/AldotheApache.ttf);
+   }
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
 body {
+    font-family: 'Aldo the Apache';
+    color: azure;
     background-color: black;
     margin: 0;
 }
 
-.fondsite {
+.Hlayout {
     display: flex;
-    align-items: start;
-    bottom: 10px;
-    margin-top: 0;
+    height: 100%;
+    width: 100%;
 }
 
-.logoytb {
-    margin-left: 75vh;
-    z-index: 2;
+.panel {
+    height: 100%;
+    width: 50%;
 }
 
-.logotwitch {
-    margin-left: 10vh;
-    z-index: 2;
+.centerdiv {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+}
+
+.TITRE {
+    position: absolute;
+    font-size: 13em;
+    text-shadow: 15px 15px 15px black;
+    flex: 1;
+}
+
+.logo {
+    position: absolute;
+    height: auto;
+    width: 25%;
+    filter: drop-shadow(15px 15px 7px black);
+    flex: 1;    
 }
 
 .backgroundvideo {
@@ -27,14 +61,4 @@ body {
     min-width: 100%;
     min-height: 100%;
     z-index: -1;
-}
-
-.cotedroit {
-    position: fixed;
-    z-index: 1;
-}
-
-.cotegauche {
-    position: fixed;
-    z-index: 1;
 }
