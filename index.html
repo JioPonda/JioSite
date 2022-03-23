@@ -9,44 +9,59 @@
         <meta name="description" content="site de JioPonda">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     </head>
     
     <body>
 
         <div class="Hlayout">
+
 <!-- PANEL RIGHT -->
-            <div class="panel right">
+            <div class="panel left" id="Lpanel">
                 
-                <div class="centerdiv">
+                <div class="centerdiv" id="Lclick">
                     <h1 class="TITRE">JIO</h1>
                     <img class="logo" src="assets/logo_twitch.png" alt="logo_twitch">
                 </div>
 
-                <a href="https://www.twitch.tv/jioponda">
-                    <img src="assets/Jio_cote_gauche_v2.png" alt="partie gauche JioPonda">
-                </a>
+                
+                <img class="profil" src="assets/Jio_cote_gauche_v2.png" alt="partie gauche JioPonda">
             
             </div>
+
 <!-- PANEL LEFT -->
-            <div class="panel left">
             
-                <div class="centerdiv">
+            <div class="panel right" id="Rpanel">
+            
+                <div class="centerdiv" id="Rclick">
                     <h1 class="TITRE">PONDA</h1>
                     <img class="logo" src="assets/logo_ytb.png" alt="logo_ytb">
                 </div>
 
-                <a href="https://www.youtube.com/c/JioPonda">
-                        <img src="assets/Jio_cote_droit_v2.png" alt="partie droite JioPonda" >
-                    </a>
+                <img class="profil" src="assets/Jio_cote_droit_v2.png" alt="partie droite JioPonda" >
+                
             </div>
         
         </div>
 
-        <!-- VIDEO FOND -->
-        <video class="backgroundvideo" autoplay muted loop>
-            <source src="assets/background_site.mp4" type="video/mp4" >
-        </video> 
+
+<!-- DIV TWITCH -->
+        
+        <div class="twitch hidden">
+            <iframe src="https://www.google.fr/"></iframe>
+        </div>
+
+<!-- DIV YTB -->
+        
+        <div class="youtube hidden">
+            <iframe src="https://www.youtube.com/channel/UC20AFONW-mNMUQK9cgQvRZg"></iframe>
+        </div>
+
+<!-- FOND -->
+        <img class="background" src="assets/MINIATURE 3W FOND.jpg" alt="fond du site">
+        
+        <script src="Script.js"></script>
         
     </body>
 
-</html> 
+</html>

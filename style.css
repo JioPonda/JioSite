@@ -4,11 +4,11 @@
    }
 
 html, body {
+    position: fixed;
     padding: 0;
     margin: 0;
     height: 100%;
     width: 100%;
-    overflow: hidden;
 }
 
 body {
@@ -27,21 +27,35 @@ body {
 .panel {
     height: 100%;
     width: 50%;
+    transform: translate(0,0);
+    transition: transform 1s;
+}
+
+.movepanel-left {
+    transform: translate(-100%,0);
+}
+
+.movepanel-right{
+    transform: translate(100%,0) ;
 }
 
 .centerdiv {
     position: absolute;
     height: 100%;
-    width: 50%;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    flex-direction: column-reverse;
-    justify-content: space-around;
+    justify-content: center;
+}
+
+.TITRE, .logo {
+    margin: 0;
+    padding: 5%;
 }
 
 .TITRE {
-    position: absolute;
-    font-size: 13em;
+    font-size: 12em;
     text-shadow: 15px 15px 15px black;
     flex: 1;
 }
@@ -54,11 +68,32 @@ body {
     flex: 1;    
 }
 
-.backgroundvideo {
-    position: fixed;
+.profil {
+    height: 100%;
+    width: 100%;
+}
+
+/* TWITCH & YOUTUBE */
+
+.hidden {
+    display: none;
+}
+
+.twitch, .youtube {
+    position: absolute;
     right: 0;
     bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+    width: 100%;
+    height: 100%;
     z-index: -1;
+}
+
+/* FOND */
+.background{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
 }
