@@ -1,6 +1,9 @@
+/* FONT-FACE & HTML-BODY */
 @font-face {
     font-family: 'Aldo the Apache';
      src: url(fonts/AldotheApache.ttf);
+    font-family: 'Square';
+     src: url(fonts/Square.ttf);
    }
 
 html, body {
@@ -18,6 +21,7 @@ body {
     margin: 0;
 }
 
+/* ACCEUIL */
 .Hlayout {
     display: flex;
     height: 100%;
@@ -55,6 +59,7 @@ body {
 }
 
 .TITRE {
+    color: #efefef;
     font-size: 12em;
     text-shadow: 15px 15px 15px black;
     flex: 1;
@@ -86,6 +91,20 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
+    display: flex;
+    justify-content: center;
+    font-family: 'Square';
+    font-size: 1em;
+    color: #efefef;
+    text-shadow: 3px 3px 3px black ;
+}
+
+div iframe {
+    position: absolute;
+    height: 40%;
+    width: 40%;
+    margin-top: 10%;
+    margin-left: 30%;
 }
 
 /* FOND */
