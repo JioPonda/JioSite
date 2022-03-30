@@ -16,7 +16,7 @@ html, body {
 
 body {
     font-family: 'Aldo the Apache';
-    color: azure;
+    color: #efefef;
     background-color: black;
     margin: 0;
 }
@@ -79,7 +79,7 @@ body {
     height: auto;
     width: 25%;
     filter: drop-shadow(15px 15px 7px black);
-    flex: 1;    
+    flex: 1;
 }
 
 .profil {
